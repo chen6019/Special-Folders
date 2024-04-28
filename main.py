@@ -44,7 +44,7 @@ auto_quit = tk.IntVar()
 auto_quit_check = tk.Checkbutton(root, text="自动退出", variable=auto_quit)
 auto_quit_check.grid(row=0, column=1, padx=5, pady=10)
 load_state(appdata_path)
-button = tk.Button(root, text="本应用数据", command=lambda: os.startfile(appdata_path))
+button = tk.Button(root, text="当前应用数据", command=lambda: os.startfile(appdata_path))
 button.grid(row=0, column=2, padx=5, pady=10)
 
 button = tk.Button(root, text="所有应用程序", command=lambda: open_folder("appsfolder"))
