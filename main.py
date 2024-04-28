@@ -2,10 +2,12 @@ import tkinter as tk
 import subprocess
 from tkinter import messagebox
 import os
+import sys
 
 def on_closing():
     save_state(appdata_path)
-    os._exit(0)
+    root.quit()
+    sys.exit()
 def open_folder(folder_name):
     try:
         result = subprocess.run(f'explorer shell:{folder_name}', shell=True)
