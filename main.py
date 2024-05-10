@@ -6,7 +6,7 @@ import sys
 
 def on_closing():
     save_state(appdata_path)
-    root.quit()
+    root.destroy()
     sys.exit()
 def open_folder(folder_name):
     try:
